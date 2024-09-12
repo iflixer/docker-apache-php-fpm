@@ -1,8 +1,7 @@
 FROM ubuntu:16.04
-MAINTAINER Willie Seabrook<willie@angrycactus.io>
 
 # No tty
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Apache 2.4 + PHP-7.0-FPM
 RUN apt-get update \
